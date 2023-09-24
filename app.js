@@ -34,7 +34,7 @@ listItem.addEventListener("click", function(details) {
         details.target.parentElement.remove();
         saveData();
     }
-})
+}, false)
 
 function saveData() {
     localStorage.setItem("data", ul.innerHTML);
